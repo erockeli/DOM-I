@@ -69,4 +69,19 @@ let navBar = document.querySelector("nav");
 navBar.appendChild(newAnchor2);
  
 navBar.prepend(newAnchor1);
+
+const topH4 = document.querySelectorAll(".top-content .text-content h4");
+ 
+topH4[0].style.color = 'mediumorchid';
+topH4[1].style.color = 'slateblue';
+topH4[0].innerText = siteContent['main-content']['features-h4'];
+topH4[1].innerText = siteContent['main-content']['about-h4'];
+ 
+ 
+ 
+const topPar = document.querySelectorAll('.top-content .text-content p');
+ 
+topPar[0].innerText = siteContent['main-content']['features-content'];
+topPar[1].innerText = siteContent['main-content']['about-content'];
+
  
