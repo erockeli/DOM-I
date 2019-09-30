@@ -46,3 +46,27 @@ ctaImg.setAttribute('src', siteContent["cta"]["img-src"])
  
 let middleImg = document.getElementById("middle-img");
 middleImg.setAttribute('src', siteContent["main-content"]["middle-img-src"])
+
+
+let navAnchors = document.querySelectorAll("a");
+ 
+navAnchors.forEach(function(item, index, array){
+ item.innerText=siteContent['nav'][`nav-item-${index + 1}`];
+ item.style.color="green";
+});
+ 
+const newAnchor1 = document.createElement("a");
+ 
+const newAnchor2 = document.createElement("a");
+ 
+newAnchor1.textContent = "Come Here";
+newAnchor2.textContent = "Go Away";
+ 
+newAnchor1.style.color = "slateblue";
+newAnchor2.style.color = "mediumorchid";
+ 
+let navBar = document.querySelector("nav");
+navBar.appendChild(newAnchor2);
+ 
+navBar.prepend(newAnchor1);
+ 
