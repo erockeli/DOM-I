@@ -84,4 +84,53 @@ const topPar = document.querySelectorAll('.top-content .text-content p');
 topPar[0].innerText = siteContent['main-content']['features-content'];
 topPar[1].innerText = siteContent['main-content']['about-content'];
 
+
+const bottomh4 = document.querySelectorAll('.bottom-content .text-content h4');
+ 
+bottomh4[0].innerText = siteContent['main-content']['services-h4'];
+bottomh4[1].innerText = siteContent['main-content']['product-h4'];
+bottomh4[2].innerText = siteContent['main-content']['vision-h4'];
+ 
+const bottomPars = document.querySelectorAll('.bottom-content .text-content p');
+ 
+bottomPars[0].innerText = siteContent['main-content']['services-content'];
+bottomPars[1].innerText = siteContent['main-content']['services-content'];
+bottomPars[2].innerText = siteContent['main-content']['services-content'];
+ 
+
+
+
+const cta1 = document.querySelector('.cta-text h1');
+cta1.style.color = "mediumorchid";
+let ctaArray = siteContent['cta']['h1'].split(" ");
+ 
+ctaArray.splice(1,0, "\r\n");
+ctaArray.splice(3,0, "\r\n");
+ 
+cta1.innerText = ctaArray.join(" ");
+ 
+const cta_button = document.querySelector('.cta button');
+ 
+cta_button.innerText = "ELIJAH";
+ 
+cta_button.style.color = "aquamarine";
+ 
+let contactH4 = document.querySelector('.contact h4');
+contactH4.innerText = siteContent['contact']['contact-h4'];
+ 
+const contactPar = document.querySelectorAll('.contact p');
+ 
+let addressArray = siteContent['contact']['address'].split(" ");
+ 
+addressArray.splice(4,0, "\r\n");
+ 
+contactPar[0].innerText = addressArray.join(" ");
+contactPar[1].innerText = siteContent['contact']['phone'];
+contactPar[2].innerText = siteContent['contact']['email'];
+ 
+const footerPart = document.querySelector("footer p");
+ 
+footerPart.innerText = siteContent['footer']['copyright'];
+ 
+footerPart.style.color = "slateblue";
  
